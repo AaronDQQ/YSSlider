@@ -16,6 +16,8 @@
 		93296390244A9B6000EE8475 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9329638F244A9B6000EE8475 /* main.m */; };
 		9329639A244A9B6000EE8475 /* YSSliderDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93296399244A9B6000EE8475 /* YSSliderDemoTests.m */; };
 		932963A5244A9B6000EE8475 /* YSSliderDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 932963A4244A9B6000EE8475 /* YSSliderDemoUITests.m */; };
+		932963B8244A9BA100EE8475 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 932963B6244A9BA100EE8475 /* UIView+Extension.m */; };
+		932963B9244A9BA100EE8475 /* YSSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 932963B7244A9BA100EE8475 /* YSSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		932963A0244A9B6000EE8475 /* YSSliderDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YSSliderDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		932963A4244A9B6000EE8475 /* YSSliderDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSSliderDemoUITests.m; sourceTree = "<group>"; };
 		932963A6244A9B6000EE8475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		932963B3244A9BA100EE8475 /* YSSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSSlider.h; sourceTree = "<group>"; };
+		932963B5244A9BA100EE8475 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		932963B6244A9BA100EE8475 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		932963B7244A9BA100EE8475 /* YSSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 		9329637C244A9B5F00EE8475 /* YSSliderDemo */ = {
 			isa = PBXGroup;
 			children = (
+				932963B2244A9BA100EE8475 /* YSSliderView */,
 				9329637D244A9B5F00EE8475 /* AppDelegate.h */,
 				9329637E244A9B5F00EE8475 /* AppDelegate.m */,
 				93296380244A9B5F00EE8475 /* SceneDelegate.h */,
@@ -135,6 +142,26 @@
 				932963A6244A9B6000EE8475 /* Info.plist */,
 			);
 			path = YSSliderDemoUITests;
+			sourceTree = "<group>";
+		};
+		932963B2244A9BA100EE8475 /* YSSliderView */ = {
+			isa = PBXGroup;
+			children = (
+				932963B3244A9BA100EE8475 /* YSSlider.h */,
+				932963B7244A9BA100EE8475 /* YSSlider.m */,
+				932963B4244A9BA100EE8475 /* Foundation */,
+			);
+			name = YSSliderView;
+			path = ../../YSSliderView;
+			sourceTree = "<group>";
+		};
+		932963B4244A9BA100EE8475 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				932963B5244A9BA100EE8475 /* UIView+Extension.h */,
+				932963B6244A9BA100EE8475 /* UIView+Extension.m */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932963B9244A9BA100EE8475 /* YSSlider.m in Sources */,
+				932963B8244A9BA100EE8475 /* UIView+Extension.m in Sources */,
 				93296385244A9B5F00EE8475 /* ViewController.m in Sources */,
 				9329637F244A9B5F00EE8475 /* AppDelegate.m in Sources */,
 				93296390244A9B6000EE8475 /* main.m in Sources */,
