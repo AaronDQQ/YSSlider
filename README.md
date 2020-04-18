@@ -1,1 +1,3 @@
 # YSSlider
+
+pod 'YSSlider'
