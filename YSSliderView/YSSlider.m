@@ -7,6 +7,8 @@
 
 #import "YSSlider.h"
 
+#import "UIView+Extension.h"
+
 @interface YSSlider () {
     UIView *_minSliderLine;
     UIView *_maxSliderLine;
